@@ -1,0 +1,10 @@
+<h1><strong>Lista de Álbuns</strong></h1>
+{{#each albuns}}
+<strong>Álbum:</strong>{{album}}<br>
+<strong>Artista:</strong>{{arista}}<br>
+<strong>Gênero:</strong>{{genero}}<br>
+<strong>Ano:</strong>{{#formatDate createdAt}}{{/formatDate}}<br>
+<a href="/deletar/{{id}}"><button>Deletar</button></a>
+<hr>
+
+{{/each}}
